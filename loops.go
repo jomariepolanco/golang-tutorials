@@ -28,7 +28,7 @@ func main() {
 	// for [Condition | for clause | range clause] block
 
 	//while statement in go
-	x := 1
+	//x := 1
 	/**
 	for x < 10 {
 		fmt.Println(x)
@@ -37,6 +37,7 @@ func main() {
 	fmt.Println("done")
 	*/
 
+	/**
 	for {
 		if x > 9 {
 			break
@@ -45,4 +46,27 @@ func main() {
 		x++
 	}
 	fmt.Println("done")
-}
+	*/
+
+	//break and continue
+	/**
+	for {
+		x++
+		if x > 100 {
+			break
+		}
+		if x % 2 != 0 {
+			continue
+		}
+		fmt.Println(x)
+	}
+	fmt.Println("done")
+	*/
+
+	y := 33
+	for i := y; i < 122; i++ {
+		fmt.Printf("%#U\t", i)
+	}
+
+
+} //main
