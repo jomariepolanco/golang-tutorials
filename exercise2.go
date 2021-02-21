@@ -29,6 +29,7 @@ func main() {
 
 	//3
 	fmt.Println("#3")
+	//declare constants in package scope??
 	const a = 42
 	const b int = 42
 	fmt.Println(a, "\t", b)
@@ -39,7 +40,7 @@ func main() {
 	fmt.Printf("%d\t", c)
 	fmt.Printf("%b\t", c)
 	fmt.Printf("%#X\t", c)
-	d := c << 1
+	d := c << 1 // bit shifting
 	fmt.Printf("%d\t", d)
 	fmt.Printf("%b\t", d)
 	fmt.Printf("%#X\t", d)
@@ -52,10 +53,10 @@ func main() {
 	//6
 	fmt.Println("#6")
 	const (
-		y1 = iota + 1
-		y2 = iota + 1
-		y3 = iota + 1
-		y4 = iota + 1
+		y1 = iota + 2020
+		y2 = iota + 2020
+		y3 = iota + 2020
+		y4 = iota + 2020
 	)
 	fmt.Println(y1, y2, y3, y4)
 }
