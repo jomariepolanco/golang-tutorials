@@ -26,5 +26,5 @@ func main() {
 	* can't have unused variables in code
 		* code pollution
 		* compiler doesn't allow it
-	* package.Identifier - notation
+	* package.Identifier - use dot notation
 */
