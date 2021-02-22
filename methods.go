@@ -28,7 +28,14 @@ type human interface {
 }
 
 func bar(h human) {
-	fmt.Println("I called human")
+	switch h.(type){
+	case person:
+		fmt.Println("I was passed into bar -", h.(person).first, h.(person).last)
+	case secretAgent:
+		fmt.Println("I was passed into bar -", h.(secretAgent).first, h.(secretAgent).last)
+	default:
+		fmt.Println("I called human")
+	}
 }
 
 func (p person) speak() {
